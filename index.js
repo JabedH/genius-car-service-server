@@ -90,6 +90,9 @@ async function run() {
       const result = await orderCollection.insertOne(order);
       res.send(result);
     });
+    app.get("/hero", (req, res) => {
+      res.send("hero meets hero ku");
+    });
   } finally {
   }
 }
